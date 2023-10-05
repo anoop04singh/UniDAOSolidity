@@ -13,12 +13,6 @@ contract deadmanSwitch{
         toSend = _toSend;
     }
 
-
-    //function transfer(address payable recepient) public {
-        //require(msg.sender==owner);
-        //uint256 balance = address(this).balance;
-        //recepient.transfer(balance);
-
     function still_alive() public {
         require(msg.sender==owner);
         lastBlock = block.number;
